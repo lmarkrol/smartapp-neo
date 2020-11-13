@@ -58,7 +58,9 @@ body
 
  #sha_button_list ul li:first-child
  {
-    margin-left: -5px;
+    /* margin-left: -5px; */
+    margin-left: auto;
+    margin-right: auto;
  }
 
 #sha_button_list ul li span
@@ -404,7 +406,7 @@ body
   }
   /* ENd of Slider */
 
-  /* Toogle */
+  /* Old Toogle */
   .toogle {
     position: relative;
     display: inline-block;
@@ -464,4 +466,10 @@ body
   .tap.round:before {
     border-radius: 50%;
   }
-  /* End of Switch */
+  /* Old End of Toogle */
+  
+
+  /* NEW TOOGLE BULB */
+  
+  /* END TOOGLE BULB */
+

@@ -14,13 +14,38 @@ slider.oninput = function() {
 
 // End of Slider
 
-//Status Indikator
-function toogle() {
-    var x = document.getElementById("bulbstatus");
-    if (x.innerHTML === "ON") {
-      x.innerHTML = "OFF";
-    } else {
-      x.innerHTML = "ON";
-    }
+//Status Bulb
+function changeImage() {
+  var image = document.getElementById('myImage');
+  var x = document.getElementById("myBulb");
+  if (image.src.match("bulb-on")) {
+    image.src = "/smartapp-neo/img/bulb-off.png";
+  } else {
+    image.src = "/smartapp-neo/img/bulb-on.png";
   }
-//End of Status Indikator
+  
+  if (x.innerHTML === "<b>ON</b>") {
+    x.innerHTML = "<b>OFF</b>";
+  } else {
+    x.innerHTML = "<b>ON</b>";
+  }
+}
+//End of Status Bulb
+
+//Status Bulb
+function changeImage2() {
+  var image = document.getElementById('myImage2');
+  var x2 = document.getElementById("myBulb2");
+  if (image.src.match("bulb-off")) {
+    image.src = "/smartapp-neo/img/bulb-on.png";
+  } else {
+    image.src = "/smartapp-neo/img/bulb-off.png";
+  }
+  
+  if (x2.innerHTML === "<b>OFF</b>") {
+    x2.innerHTML = "<b>ON</b>";
+  } else {
+    x2.innerHTML = "<b>OFF</b>";
+  }
+}
+//End of Status Bulb

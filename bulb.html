@@ -98,9 +98,9 @@
                     <div class="row">
                         <div class="col-12 sha_tile">
                             <div class="slidecontainer" style="text-align: center;">
-                                <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                                <input style="color: #44464e; font-size: 1.5em;" type="range" min="0" max="100" value="0" class="slider" id="myRange">
                                 <span>&nbsp;</span>
-                                <p style="color: #606270; font-size: 1.5em;"> <span id="demo" style="color: #85879c; font-size: 1.5em;"></span> &percnt;</p>
+                                <p style="color: #606270; font-size: 1.5em; font-weight: bold;"> <span id="demo" style="color: #606270; font-size: 1.5em;"></span> &percnt;</p>
                                 <p style="color: #73778b; font-size: 1.5em;">Brightness</p>
                             </div>
                         </div>
@@ -108,35 +108,37 @@
                 </section>
                         
 
-                        <section id="sha_temp_meta" class="col-16">
-                            <div class="col-14 sha_tile">
-                                <ul class="row">
+                        <section id="sha_temp_meta" class="col-12">
+                            <div class="col-14 ">
+                                <div class="row">
                                 <div class="col-6 sha_tile">
                                 <div class="slidecontainer" style="text-align: center;">
-                                <label class="toogle" style="transform: rotate(90deg); margin-top: 3%;">
+                                <!-- <label class="toogle" style="transform: rotate(90deg); margin-top: 3%;">
                                     <input type="checkbox" checked>
                                     <span class="tap round"></span>
-                                  </label>
-                                  <div><br>
-                                  <p style="color: #606270; font-size: 1.5em;">Bulb A</p>
-                                  <p style="color: #606270; font-size: 1.5em;" id="bulbstatus"><b>ON</b></p>
+                                  </label> -->
+                                  <img id="myImage" onclick="changeImage()" src="/smartapp-neo/img/bulb-on.png" width="60" height="120">
+                                  <div style="color: #606270; font-size: 1.5em;">Bulb A</div>
+                                  <div id="myBulb" style="color: #606270; font-size: 1.5em;"><b>ON</b></div>
+                                  <div>                                
                                 </div>
                                 </div>
                             </div>
 
                             <div class="col-6 sha_tile">
                                 <div class="slidecontainer" style="text-align: center;">
-                                <label class="toogle" style="transform: rotate(90deg); margin-top: 3%;">
-                                    <input type="checkbox" >
+                                <!-- <label class="toogle" style="transform: rotate(90deg); margin-top: 3%;">
+                                    <input type="checkbox" checked>
                                     <span class="tap round"></span>
-                                  </label>
-                                  <div><br>
-                                  <p style="color: #606270; font-size: 1.5em;">Bulb B</p>
-                                  <p style="color: #606270; font-size: 1.5em;" id="bulbstatus"><b>OFF</b></p>
+                                  </label> -->
+                                  <img id="myImage2" onclick="changeImage2()" src="/smartapp-neo/img/bulb-off.png" width="60" height="120">
+                                  <div style="color: #606270; font-size: 1.5em;">Bulb B</div>
+                                  <div id="myBulb2" style="color: #606270; font-size: 1.5em;"><b>OFF</b></div>
+                                  <div>                                
                                 </div>
                                 </div>
                             </div>
-                        </ul>
+                        </div>
                         </div>
                     </section>
 
