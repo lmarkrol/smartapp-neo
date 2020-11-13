@@ -93,6 +93,68 @@ body
 }
 /** End Section Button List Style **/
 
+
+/** Start Section BIG Button List Style **/
+#sha_button_list2 
+{
+    margin-top: 10px;
+}
+
+#sha_button_list2 ul
+{
+    padding: 0;
+}
+
+#sha_button_list2 ul li
+{
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 15%;
+ }
+
+ #sha_button_list2 ul li:first-child
+ {
+    margin-left: -5px;
+ }
+
+#sha_button_list2 ul li span
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#sha_button_list2 ul li.off span
+{
+    color: rgba(49,69,106,0.35);
+
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+    border: 1px solid rgba(0,0,0,0.0);
+}
+
+#sha_button_list2 ul li.on span
+{
+    color: rgba(49,69,106,1);
+
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0 rgba(255,255,255,1),
+                0.5px 0.5px 0 rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+}
+/** End Section BIG Button List Style **/
+
+
 /** Start Section Body 1 Style **/
 #sha_temp_body
 {
@@ -291,3 +353,115 @@ body
     box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);
 }
 /** End Section Footer Style **/
+
+/* Slider  */
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #b0b1c0 ;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(49,69,106,1);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #07ac0f;
+    cursor: pointer;
+  }
+  .myRange {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 356px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  /* ENd of Slider */
+
+  /* Toogle */
+  .toogle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toogle input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .tap {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7b88ad;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .tap:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .tap {
+    background-color: #82CFD0; 
+  }
+  
+  input:focus + .tap {
+    box-shadow: 0 0 1px #7b88ad;
+  }
+  
+  input:checked + .tap:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded tap */
+  .tap.round {
+    border-radius: 34px;
+  }
+  
+  .tap.round:before {
+    border-radius: 50%;
+  }
+  /* End of Switch */
