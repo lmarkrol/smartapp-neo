@@ -474,11 +474,11 @@ body
   /* END TOOGLE BULB */
  
 
-  n-::after {
+  p-1::after {
     font: 800 20px system-ui;
     content: counter(count);
     animation: counter 5s linear infinite alternate;
-    counter-reset: count 40;
+    counter-reset: count 740;
   }
   
   @keyframes counter {
@@ -519,11 +519,11 @@ body
   
 
 
-  m-::after {
+  p-2::after {
     font: 800 20px system-ui;
     content: counter(count);
     animation: counter 5s linear infinite alternate;
-    counter-reset: count 580;
+    counter-reset: count 1580;
   }
   
   @keyframes counter {
@@ -562,3 +562,91 @@ body
     }
   }
   
+
+  p-3::after {
+    font: 800 20px system-ui;
+    content: counter(count);
+    animation: counter 5s linear infinite alternate;
+    counter-reset: count 3;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 10;
+    }
+    10% {
+      counter-increment: count 1;
+    }
+    20% {
+      counter-increment: count 2;
+    }
+    30% {
+      counter-increment: count 3;
+    }
+    40% {
+      counter-increment: count 4;
+    }
+    50% {
+      counter-increment: count 5;
+    }
+    60% {
+      counter-increment: count 6;
+    }
+    70% {
+      counter-increment: count 7;
+    }
+    80% {
+      counter-increment: count 8;
+    }
+    90% {
+      counter-increment: count 9;
+    }
+    100% {
+      counter-increment: count 0;
+    }
+  }
+  
+
+
+  p-4::after {
+    font: 800 20px system-ui;
+    content: counter(count);
+    animation: counter 5s linear infinite alternate;
+    counter-reset: count 17;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 0;
+    }
+    10% {
+      counter-increment: count 1;
+    }
+    20% {
+      counter-increment: count 2;
+    }
+    30% {
+      counter-increment: count 3;
+    }
+    40% {
+      counter-increment: count 4;
+    }
+    50% {
+      counter-increment: count 5;
+    }
+    60% {
+      counter-increment: count 6;
+    }
+    70% {
+      counter-increment: count 7;
+    }
+    80% {
+      counter-increment: count 8;
+    }
+    90% {
+      counter-increment: count 9;
+    }
+    100% {
+      counter-increment: count 10;
+    }
+  }
