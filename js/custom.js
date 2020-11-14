@@ -49,3 +49,9 @@ function changeImage2() {
   }
 }
 //End of Status Bulb
+
+
+//random value
+var random1 = Math.floor(Math.random() * 5) + 5;
+document.getElementById("result1").innerHTML = random1;
+//end of random value
