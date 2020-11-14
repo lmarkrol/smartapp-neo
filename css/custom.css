@@ -472,4 +472,93 @@ body
   /* NEW TOOGLE BULB */
   
   /* END TOOGLE BULB */
+ 
 
+  n-::after {
+    font: 800 20px system-ui;
+    content: counter(count);
+    animation: counter 5s linear infinite alternate;
+    counter-reset: count 40;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 110;
+    }
+    10% {
+      counter-increment: count 221;
+    }
+    20% {
+      counter-increment: count 532;
+    }
+    30% {
+      counter-increment: count 343;
+    }
+    40% {
+      counter-increment: count 654;
+    }
+    50% {
+      counter-increment: count 265;
+    }
+    60% {
+      counter-increment: count 676;
+    }
+    70% {
+      counter-increment: count 787;
+    }
+    80% {
+      counter-increment: count 498;
+    }
+    90% {
+      counter-increment: count 179;
+    }
+    100% {
+      counter-increment: count 510;
+    }
+  }
+  
+
+
+  m-::after {
+    font: 800 20px system-ui;
+    content: counter(count);
+    animation: counter 5s linear infinite alternate;
+    counter-reset: count 580;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 110;
+    }
+    10% {
+      counter-increment: count 311;
+    }
+    20% {
+      counter-increment: count 112;
+    }
+    30% {
+      counter-increment: count 413;
+    }
+    40% {
+      counter-increment: count 914;
+    }
+    50% {
+      counter-increment: count 115;
+    }
+    60% {
+      counter-increment: count 916;
+    }
+    70% {
+      counter-increment: count 117;
+    }
+    80% {
+      counter-increment: count 118;
+    }
+    90% {
+      counter-increment: count 619;
+    }
+    100% {
+      counter-increment: count 110;
+    }
+  }
+  
